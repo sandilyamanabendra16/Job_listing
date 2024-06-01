@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body{
+    font-family: "DM Sans", sans-serif;
+    
+}
+
+.job{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mbody{
+    height: 100%;
+    width: 100vw;
+    background-color: white;
+}
+
+header{
+    height: 120px;
+    background-color: #ED5353;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 60px 60px;
+}
+header h1{
+    color: white;
+    margin: 40px 0 0 100px;
+    font-weight: 500;
+}
+.button button:nth-child(1){
+    all: unset;
+    height:40px;
+    width:100px;
+    border: 2px solid white; 
+    border-radius: 10px;
+    padding-left:50px;
+    background-color: #ED5353;
+    color:white;
+    margin-top: 40px;
+}
+.button button:nth-child(2){
+    all: unset;
+    height:40px;
+    width:100px;
+    border: 2px solid white; 
+    border-radius: 10px;
+    padding-left:50px;
+    background-color: white;
+    color: #ED5353;
+    margin: 40px 100px 0 20px;
+}
+
+.button5{
+    all: unset;
+    height:40px;
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white; 
+    border-radius: 10px;
+    background-color: white;
+    color: #ED5353;
+    margin: 40px 100px 0 20px;
+}
+
+.template{
+    height: 120px;
+    width: 70vw;
+    border: 1px solid white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -5px -5px 10px 10px #FFEEEE, 5px 5px 10px 10px #FFEEEE;
+}
+
+.skills{
+    display: flex;
+    margin: 10px;
+}
+
+.skills span{
+    height: 20px;
+    width:100px;
+    background-color: #FFEEEE;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salary1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+
+.salary2 button:nth-child(1){
+    all:unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width:150px;
+    margin-right:20px ;
+    background-color: #ED5353;
+    color: white;
+    border-radius: 3px;
+}
+.salary2 button:nth-child(2){
+    all:unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width:150px;
+    margin-right:20px ;
+    background-color: #ED5353;
+    color: white;
+    border-radius: 3px;
+}
+
+.salary p{
+    margin: 10px;
+}
+
+.salary {
+    display: flex;
+    margin-left: 30px ;
+}
+
+.salary2 {
+    display: flex;
+    margin-left: 30px ;
+    color:#ED5353;
+}
+
+.salary2 p{
+    margin: 10px;
+}
+.template h3{
+    margin: 10px 0 0 30px;
+}
+
+.searchbar{
+    height: 180px;
+    width:70vw;
+    border:1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:30px 0 50px 215px;
+    box-shadow: -5px -5px 10px 10px #FFEEEE, 5px 5px 10px 10px #FFEEEE;
+    
+}
+
+.button1{
+    all:unset;
+    height: 50px;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 2px solid #CECECE;
+}
+
+.button2{
+    display: flex;
+    flex-direction: row;
+}
+
+.skillsinput{
+    all:unset;
+    height: 30px;
+    width: 250px;
+    margin: 10px 20px 0 100px;
+    background-color: white;
+    border: 2px solid #CECECE;
+    color: #9C9C9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.buttons button:first-child{
+    all:unset;
+    background-color: #ED5353;
+    color: white;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 10px 10px 200px;
+}
+
+.buttons button:nth-child(2){
+    all:unset;
+    color: #ED5353;
+    height: 30px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 130px 10px 20px;
+}
+
+.skillArray{
+    width:400px;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.span1{
+    margin: 10px;
+    height:30px;
+    width:80px;
+    background-color:#FFEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5px 5px 5px 10px;
+}
+
+.spanBut{
+    position: relative;
+    right:-10px;
+    background-color: #ED5353;
+    color: white;
+    height:30px;
+    width: 30px;
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body{
+    font-family: "DM Sans", sans-serif;
+    background-color: #FFEEEE;
+}
+
+.job{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    height: 120px;
+    background-color: #ED5353;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 60px 60px;
+}
+header h1{
+    color: white;
+    margin: 40px 0 0 100px;
+    font-weight: 500;
+}
+.button button:nth-child(1){
+    all: unset;
+    height:40px;
+    width:100px;
+    border: 2px solid white; 
+    border-radius: 10px;
+    padding-left:50px;
+    background-color: #ED5353;
+    color:white;
+    margin-top: 40px;
+}
+.button button:nth-child(2){
+    all: unset;
+    height:40px;
+    width:100px;
+    border: 2px solid white; 
+    border-radius: 10px;
+    padding-left:50px;
+    background-color: white;
+    color: #ED5353;
+    margin: 40px 100px 0 20px;
+}
+
+.template{
+    height: 80px;
+    width: 77vw;
+    border: 1px solid white;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: -5px -5px 5px 5px #eae9e9, 5px 5px 5px 5px #eae9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.mbody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sbody{
+    height: 100vh;
+    width:70vw;
+    box-shadow: -5px -5px 5px 5px #eae9e9, 5px 5px 5px 5px #eae9e9;
+    margin: 30px 0 30px 0;
+    background-color: white;
+    padding: 50px;
+}
+
+.sbody p:nth-of-type(1){
+    color:#CECECE;
+    margin:0 20px 20px 0px;
+}
+.sbody p:nth-of-type(2){
+    color:#ED5353;
+    margin-top:10px;
+    
+}
+
+.sbody p:nth-of-type(3){
+    color:black;
+    margin: 30px 30px 30px 0;    
+}
+
+.sbody h3{
+    margin: 30px 30px 30px 0;
+}
+
+.skill{
+    display: flex;
+    margin: 10px;
+}
+
+.skill li{
+    height: 20px;
+    width:100px;
+    background-color: #FFEEEE;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
