@@ -32,6 +32,7 @@ export default function Job(){
     }
 
     const triggerSearch=()=>{
+        console.log({skills});
         getAllJobs({skills})
         .then((response)=>{setJobs(response.data)})
         .catch((err)=>{
