@@ -19,7 +19,7 @@ const jobRoutes = require("./routes/job");
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*",
   })
 )
 
