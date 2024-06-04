@@ -3,7 +3,9 @@ import { BACKEND_URL } from "../constant";
 
 export const getAllJobs= async ({skills})=>{
     try{
-        const response= await axios.get(`${BACKEND_URL}/api/job/all?skills=${skills}`);
+        const skills1=encodeURIComponent(skills);
+        console.log(skills1);
+        const response= await axios.get(`${BACKEND_URL}/api/job/all?skills=${skills1}`);
         return response;
     }
     catch(err){
