@@ -31,6 +31,14 @@ export default function Job(){
         navigate("/register");
     }
 
+    const handleInputChange = (e) => {
+        const inputSkills = e.target.value.split(',');
+        setSkills(inputSkills);
+      };
+
+      const handleDeleteSkill = (skillToDelete) => {
+        setSkills(skills.filter(skill => skill !== skillToDelete));
+      };
     const triggerSearch=()=>{
         console.log({skills});
         getAllJobs({skills})
@@ -40,7 +48,8 @@ export default function Job(){
             setJobs([])
         })
     }
-    
+
+
     return(
         <div className={styles.mbody}>
             <header>
@@ -65,15 +74,24 @@ export default function Job(){
                 <input type="text" placeholder="Type any job title" className={styles.button1}/>
                 <div className={styles.button2}>
                     
-                        <input type="text" value={skills} onChange={(e)=>setSkills(e.target.value)} placeholder="Type skills separated by comma" className={styles.skillsinput}/> 
+                        <input type="text" value={skills} onChange={handleInputChange} placeholder="Type skills separated by comma" className={styles.skillsinput}/> 
                    {/* <div> {skills? skills.split(",").map((skill,idx)=>(
                         <span key={idx}>{skill}</span>
                     )):null}</div> */}
-                   <div className={styles.skillArray}> {skills && typeof skills === 'string' ? 
+                   {/* <div className={styles.skillArray}> {skills? typeof skills === 'string' ? 
                         skills.split(",").map((skill, idx) => (
-                        <span key={idx} className={styles.span1}>{skill}<button className={styles.spanBut}>X</button></span>
-                            )) : null}
-                    </div>
+                        <span key={idx} className={styles.span1}>{skill}<button className={styles.spanBut} onClick={() => handleDeleteSkill(skill)}>X</button></span>
+                            )):null : null}
+                    </div> */}
+                    <div className={styles.skillArray}>
+                        {skills.length > 0 && skills.map((skill, idx) => (
+                            <span key={idx} className={styles.span1}> {skill}
+                        <button className={styles.spanBut} onClick={() => handleDeleteSkill(skill)}>
+                            X
+                        </button>
+                            </span>
+          ))}
+      </div>
                     <div className={styles.buttons}>
                         <button onClick={triggerSearch}> Apply Filters</button>
                         <button onClick={()=>setSkills([])}> Clear</button>
